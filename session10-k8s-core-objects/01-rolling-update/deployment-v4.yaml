@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: nginx:1.25-alpine
+          image: nginx:1.27-alpine
 
           ports:
             - containerPort: 80
@@ -38,8 +38,8 @@ spec:
                   - sh
                   - -c
                   - |
-                    echo '<html><body style="background:#1a1a2e;color:#00d9ff;font-family:monospace;font-size:3em;text-align:center;padding-top:20vh">
-                    <p>VERSION: v4</p><p style="font-size:0.5em;color:#00d9ff">Rolling Update Demo - LATEST VERSION!</p></body></html>' \
+                    echo '<html><body style="background:#1a1a2e;color:#53d8fb;font-family:monospace;font-size:3em;text-align:center;padding-top:20vh">
+                    <p>VERSION: v4</p><p style="font-size:0.5em;color:#e94560">Rolling Update Demo - FINAL VERSION!</p></body></html>' \
                     > /usr/share/nginx/html/index.html
 
           resources:
